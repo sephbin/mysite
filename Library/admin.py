@@ -16,6 +16,7 @@ admin.site.register(assemblymethod)
 admin.site.register(edges)
 admin.site.register(materials)
 admin.site.register(CSSS)
+admin.site.register(generalColour)
 
 #admin.site.register(thickness)
 #admin.site.register(maximumweightcapacity)
