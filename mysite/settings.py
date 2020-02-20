@@ -25,7 +25,8 @@ SECRET_KEY = 'f2ms+%br=$g)w1u@j%v^g$*w&jm0b$^wor6x12jyttajbi+-d^'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
+# once you finish the tutorial, you might want to change this to a more secure setting, 'yourusername.pythonanywhere.com'.
 
 
 # Application definition
