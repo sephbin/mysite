@@ -1,0 +1,13 @@
+*.pyc
+*venv*
+*venv/*
+*/bundles/main*
+coxlabs/__pycache__/settings.cpython-34.pyc
+nav/__pycache__/views.cpython-34.pyc
+rhino-automation/run.txt
+temp.log
+*db.sqlite3
+*settings_test.py
+*.pyc
+*/migrations/*
+*static/*
