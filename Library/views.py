@@ -20,6 +20,10 @@ def getOneThing(request, thingtype, srating, gcolour, choice):
 	thingtype = get_object_or_404(thingSubType, name=thingtype)
 	gcolour = get_object_or_404(generalColour, name=gcolour)
 	print(thingtype, gcolour)
-	choicething = thing.objects.filter(subType = thingtype, sliprating__gte = float(srating), generalColour = gcolour).order_by(choice).last()
+	if choice.startswith("-"):
+
+		choicething = thing.objects.filter(subType = thingtype, sliprating__gte = float(srating), generalColour = gcolour).order_by(choice[1:]).first()
+	else:
+		choicething = thing.objects.filter(subType = thingtype, sliprating__gte = float(srating), generalColour = gcolour).order_by(choice).last()
 	print(choicething)
 	return HttpResponse(ThingSerializer_JustName(choicething).data["name"])
