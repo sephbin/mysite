@@ -15,7 +15,7 @@ class ThingViewSet(viewsets.ModelViewSet):
 	search_fields = ("name",)
 
 
-def getOneThing(reguest, thingtype, srating, gcolour, choice)
+def getOneThing(request, thingtype, srating, gcolour, choice)
 
 	thingtype = get_object_or_404(thingSubType, name=thingtype)
 	gcolour = get_object_or_404(generalColour, name=gcolour)
